@@ -1,5 +1,5 @@
 {
-  "name": "env-schema-check",
+  "name": "env-schema-validate",
   "version": "1.0.0",
   "description": "Lightweight, zero-dependency environment variable validator for Node.js",
   "main": "index.js",
@@ -25,6 +25,6 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/adhikareeprayush/env-schema-check.git"
+    "url": "https://github.com/adhikareeprayush/env-schema-validate.git"
   }
 }

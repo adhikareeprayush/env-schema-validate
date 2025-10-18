@@ -1,11 +1,11 @@
-# env-schema-check
+# env-schema-validate
 
 A lightweight, zero-dependency Node.js package for validating environment variables against a schema.
 
 ## Installation
 
 ```bash
-npm install env-schema-check
+npm install env-schema-validate
 ```
 
 ## Usage
@@ -13,7 +13,7 @@ npm install env-schema-check
 Define a schema for your environment variables and validate them:
 
 ```javascript
-import checkEnv from "env-schema-check";
+import checkEnv from "env-schema-validate";
 
 const schema = {
   PORT: { type: "number", default: 3000, required: false },
@@ -58,7 +58,7 @@ MAX_USERS=500
 EMAIL=user@example.com
 
 // index.js
-import checkEnv from 'env-schema-check';
+import validateEnv from 'env-schema-validate';
 
 const schema = {
   PORT: { type: 'number', default: 3000, required: false },
@@ -68,7 +68,7 @@ const schema = {
   EMAIL: { type: 'email' }
 };
 
-const env = checkEnv(schema);
+const env = validateEnv(schema);
 console.log(env);
 // Output: { PORT: 8080, API_KEY: 'abc123', DATABASE_URL: 'https://example.com', MAX_USERS: 500, EMAIL: 'user@example.com' }
 ```
