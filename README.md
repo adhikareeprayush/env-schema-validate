@@ -13,7 +13,7 @@ npm install env-schema-validate
 Define a schema for your environment variables and validate them:
 
 ```javascript
-import checkEnv from "env-schema-validate";
+import validateEnv from "env-schema-validate";
 
 const schema = {
   PORT: { type: "number", default: 3000, required: false },
@@ -24,7 +24,7 @@ const schema = {
 };
 
 try {
-  const env = checkEnv(schema);
+  const env = validateEnv(schema);
   console.log("Validated environment:", env);
 } catch (error) {
   console.error(error.message);
